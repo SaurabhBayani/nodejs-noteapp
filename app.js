@@ -1,19 +1,19 @@
 const fs = require('fs');
 const yargs = require('yargs');
-const notes_module = require('./notes');
+const notesModule = require('./notes');
 
 const args = yargs.argv;
 const command = process.argv[2].toUpperCase();
 
 switch(command){
     case 'ADD':
-        notes_module.addNote(args.title, args.body);
+        notesModule.addNote(args.title, args.body);
         break;
     case 'DELETE':
-        notes_module.delete_note('title');
+        notesModule.deleteNote('title');
         break;
     case 'LIST':
-        notes_module.list_notes();
+        notesModule.listNotes();
         break;
     default:
         console.log('Bad Command')
