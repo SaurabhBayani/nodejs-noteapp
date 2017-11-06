@@ -20,10 +20,19 @@ switch(command){
         }
         break;
     case 'DELETE':
-        notesModule.deleteNote('title');
+        var result = notesModule.deleteNote(args.title);
+        var message = result ? 'Note removed successfully' : 'Note not found';
+        console.log(message);
         break;
     case 'LIST':
-        notesModule.listNotes();
+        var notes = notesModule.listNotes();
+        if (notes) {
+            console.log('Notes List:');
+            console.log('------------------');
+            console.log(notes);
+        } else {
+            console.log('No Notes Found');
+        }
         break;
     default:
         console.log('Bad Command')
