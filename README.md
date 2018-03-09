@@ -8,9 +8,9 @@ CLI based Notes App using Nodejs
 4. Use following commands to use app
 
 # Available commands to run
-1. `ADD`
-    e.g: node app.js add --title="Saurabh" --body="bayani" 
-2. `DELETE`
-    e.g: node app.js delete --title=Saurabh
-3. `LIST`
-    e.g: node app.js list
+1. ADD
+    e.g: `node app.js add --title="Saurabh" --body="bayani"`
+2. DELETE
+    e.g: `node app.js delete --title=Saurabh`
+3. LIST
+    e.g: `node app.js list`
